@@ -24,7 +24,7 @@ Techtunes is a simple music browsing platform built with **Vite** and **React**.
    ```
 
 4. **Open in Browser**:
-   - Visit `http://localhost:3000` to view the app in action.
+   - Visit `http://localhost:5173` to view the app in action.
 
 ## Features
 
