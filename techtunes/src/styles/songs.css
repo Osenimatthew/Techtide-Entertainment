@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.songs-body {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background: url(../assets/musicback2.webp) repeat center;
+    min-height: 100vh;
+}
+
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 0 10px;
+    padding-top: 20px;
+}
+  
+.song-item {
+    background-color: cornsilk;
+    padding: 20px;
+    text-align: center;
+}
+  
+.song-item img {
+    width: 100%;
+    height: auto;
+}
+  
+#audio-player {
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 10px; 
+    padding: 10px 20px; 
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+  
+.play-btn {
+ background-color: #28a745; 
+}
+  
+.play-btn:hover { 
+    background-color: #218838; 
+}
+  
+.add_btn {
+ background-color: #007bff; 
+}
+  
+.add_btn:hover {
+ background-color: #0056b3; 
+}
+
+#audio-player {
+    display: none;
+}
+
+.songs-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a2e;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 960px){
+    .music-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 720px){
+
+    .music-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .play-btn {
+        padding: 10px 10px;
+    }
+
+    .add-btn {
+        padding: 10px 10px;
+    }
+
+}
