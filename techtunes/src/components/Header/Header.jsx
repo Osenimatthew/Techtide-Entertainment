@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import useLogout from '../../hooks/logout.js';
-import AuthStatus from '../../hooks/state.jsx';
+import AuthStatus from '../../hooks/State.jsx';
 import './header.css'
 
 const Header = () => {
