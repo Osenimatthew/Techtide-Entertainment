@@ -22,7 +22,6 @@ const Playlist = () => {
     }, [auth, db]);
   
     const playTrack = (index) => {
-      setCurrentTrackIndex(index);
       setAudioUrl(playlist[index]?.audio);
     };
   
